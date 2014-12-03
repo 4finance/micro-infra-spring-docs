@@ -1,0 +1,50 @@
+= Micro Infra Sprind Docs
+Authors
+:doctype: book
+// ======================================================================================
+
+
+
+[[welcome-to-the-micro-infra-spring-wiki]]
+Welcome to the micro-infra-spring wiki!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Here you can find detailed information about the project:
+
+* [[How to use it]]
+* [[How to test it]]
+* [[Project dependencies on com.ofg artifacts]]
+
+* Modules: 
+
+** Base 
+
+*** [[Service discovery]] 
+*** [[Spring Environment setup]] 
+*** [[Health check]] 
+*** [[Metrics publishing]] 
+*** [[Controller exceptions handling]] 
+*** [[JSON View resolving]] 
+*** [[CorrelationId setting]] 
+*** [[Request body logging]]
+*** [[Customized REST template]]
+*** [[Abstraction over RestTemplate: bound with service discovery]]
+*** [[JSON processing features with Jackson configuration]]
+
+** Swagger
+
+*** [[Swagger API documentation]]
+*** [[Swagger UI]]
+
+** Additional
+
+*** [[CorrelationId for Spring Reactor]]
+*** [[CorrelationId for Apache Camel with Spring]]
+*** [[Centralized configuration management]]
+
+* [[Development]]
+
+## Help
+
+* https://groups.google.com/forum/#!forum/micro-infra-spring[Google group]
+* http://stackoverflow.com/questions/tagged/micro-infra-spring[StackOverflow]

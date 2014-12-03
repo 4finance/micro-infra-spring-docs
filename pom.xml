@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ofg</groupId>
+    <artifactId>micro-infra-spring-docs</artifactId>
+    <version>0.1.0</version>
+
+    <name>${project.artifactId}</name>
+    <description>Micro Infra Spring Docs</description>
+    <url>https://github.com/4finance/micro-infra-spring-docs</url>
+
+    <organization>
+        <name>4Finance IT</name>
+        <url>http://www.4financeit.com</url>
+    </organization>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.asciidoctor</groupId>
+                <artifactId>asciidoctor-maven-plugin</artifactId>
+                <version>1.5.0</version>
+                <executions>
+                    <execution>
+                        <id>generate-docbook</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDocumentName>index.adoc</sourceDocumentName>
+                            <backend>html5</backend>
+                            <doctype>book</doctype>
+                            <attributes>
+                                <docinfo>true</docinfo>
+                            </attributes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+
